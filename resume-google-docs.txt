@@ -1,0 +1,187 @@
+TIMOTHY DALY
+Web Development · IT Systems · Government Technology
+
+───────────────────────────────────────────────────────────────────────────────
+
+CONTACT INFORMATION
+Email: thetimdaly@gmail.com
+Phone: (+61) 0414 265 050
+LinkedIn: linkedin.com/in/thetimdaly
+Location: Fremantle / Perth, Western Australia
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PROFESSIONAL PROFILE
+
+Technology and web projects with a human-centered edge
+
+I design, deliver and support digital systems that work for people — from intranets and booking systems in Western Australian courts, to HR technology and self-service tools at the Department of Transport, and modern web experiences through The Daly Creative.
+
+I am a web and IT professional with experience in high-stakes public sector environments, where reliability, clarity and integrity are essential. I combine back-end web development and cyber security knowledge with hands-on experience in court technology, HR systems and operations leadership.
+
+My work includes launching the Supreme Court of Western Australia's staff intranet, modernising courtroom booking workflows, streamlining HR technology at the Department of Transport, and delivering websites and digital campaigns through my freelance studio, The Daly Creative. Across all of this, I focus on practical solutions, inclusive collaboration and making complex systems easier for people to use.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TECHNOLOGY STACK
+
+• HTML, CSS, JavaScript
+• Node.js
+• MongoDB
+• Cyber security foundations
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CORE SKILLS
+
+Web and Back-End
+• HTML, CSS and JavaScript
+• Node.js, Express and REST APIs
+• MongoDB and NoSQL fundamentals
+• Responsive and accessible user interfaces
+
+IT and Systems
+• Enterprise HR and ESS platforms (ELMO, Oracle / DayForce)
+• Microsoft 365 and enterprise tools, Azure Active Directory
+• Citrix, remote access, VNC and IP management
+• Court AV and streaming, conferencing (WebEx, Cisco)
+
+Projects and Delivery
+• Project and change management
+• Process improvement and automation
+• Vendor coordination and budget awareness
+• Documentation, procedures and policy support
+
+People and Culture
+• Team leadership and coaching
+• Stakeholder and client engagement
+• Diversity and inclusion advocacy
+• Calm crisis and incident management
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PROFESSIONAL EXPERIENCE
+
+Chief of Everything — The Daly Creative
+February 2025 – Present | Fremantle / Perth, Western Australia
+
+Freelance studio focused on helping Perth businesses grow smarter through web development, digital marketing and AI-informed strategy.
+
+• Design and build responsive websites and landing pages for local businesses
+• Develop content and brand assets aligned with client goals and audiences
+• Advise on data-informed marketing and practical AI use in small business workflows
+
+───────────────────────────────────────────────────────────────────────────────
+
+Technology Administrator — Department of Transport, Western Australia
+June 2024 – January 2025
+
+Supported People and Culture technology systems, including payroll and online training platforms, with a focus on process improvement and automation.
+
+• Streamlined online training update processes, reducing processing time by approximately 20 percent
+• Implemented automated email notifications for staff bank detail changes, reducing manual intervention and enquiries to Employee Services
+• Acted as second-in-charge in a six-person team, providing technical guidance and maintaining relationships with executive stakeholders and service areas
+
+───────────────────────────────────────────────────────────────────────────────
+
+Court Technology and Resource Officer — Supreme Court of Western Australia
+July 2023 – May 2024
+
+Delivered and supported technology that underpins the operations of the Supreme Court, balancing innovation with the expectations of the judicial environment.
+
+• Led the development and launch of the Court's intranet, improving internal communication and access to resources
+• Modernised courtroom booking with an integrated digital calendar system that replaced manual processes
+• Coordinated responses to critical technology incidents, maintaining transparency and continuity of proceedings
+
+───────────────────────────────────────────────────────────────────────────────
+
+Court Support Officer — District Court of Western Australia
+November 2022 – July 2023
+
+Managed civil subpoena processing and storage, providing client-facing support while maintaining high standards of confidentiality and accuracy.
+
+• Streamlined handling and security of civil subpoenas to reinforce procedural integrity
+• Identified and implemented workflow improvements in a sensitive and highly trusted environment
+
+───────────────────────────────────────────────────────────────────────────────
+
+Resident Support Officer / Team Leader — COVID-19 Quarantine Victoria
+December 2020 – April 2022
+
+Led a large team of resident support officers in hotel quarantine, ensuring safe and consistent operations during the pandemic.
+
+• Provided calm leadership, rostering and resource management under constant change
+• Supported staff wellbeing while maintaining operational standards and compliance
+
+───────────────────────────────────────────────────────────────────────────────
+
+Digital Solutions Specialist — White Pages Australia
+November 2018 – October 2020
+
+• Exceeded sales and customer satisfaction targets while improving call centre efficiency and digital product adoption
+
+───────────────────────────────────────────────────────────────────────────────
+
+Flight Attendant (Cabin Crew) — Jetstar Airways
+March 2013 – February 2018
+
+• Provided high-quality service and safety in a fast-paced, highly regulated environment
+• Built resilience and people skills that underpin my current work in technology and projects
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SELECTED PROJECTS
+
+Drumplings — Melbourne Fusion Restaurant
+Website redesign for a Melbourne-based fusion dumpling restaurant. Focused on improving user flow, mobile responsiveness, SEO and presenting a clean, modern hospitality brand identity.
+🔗 drumplings.com.au
+Tags: Web design, Hospitality, SEO, Responsive
+
+───────────────────────────────────────────────────────────────────────────────
+
+Preservation Framers — Boutique Art Framing
+Brand refresh and website development for a premium Perth-based art framing studio. Work included information architecture, refined typography, colour palette expansion and service page structure.
+🔗 preservationframers.com.au
+Tags: Branding, Web design, Creative services, Local business
+
+───────────────────────────────────────────────────────────────────────────────
+
+Dora Health & Wellbeing — Care Services Provider
+Branding, website design and operational digital setup for an in-home care and wellbeing organisation. Work included brand identity, colour systems, web build, onboarding pathways and digital ecosystem planning.
+🔗 dorahealth.com.au
+Tags: Care services, Branding, Web design, Onboarding & journeys
+
+───────────────────────────────────────────────────────────────────────────────
+
+The Daly Creative — Personal Website & Brand
+My main digital identity and creative business hub — showcasing web design, branding, digital strategy and tech-focused client solutions.
+🔗 thedalycreative.com
+Tags: Personal brand, Portfolio site, Digital strategy
+
+Note: More project URLs and case studies can be added on request.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+EDUCATION
+
+Double Diploma of Information Technology
+Equinim College | 2024 – 2025
+
+• Diploma of Information Technology (Back End Web Development)
+• Diploma of Information Technology (Cyber Security)
+• Focus on databases, back-end systems, security fundamentals and cloud protocols
+
+───────────────────────────────────────────────────────────────────────────────
+
+Bachelor of Business Administration (Marketing)
+Torrens University Australia | Currently Studying
+
+═══════════════════════════════════════════════════════════════════════════════
+
+REFEREES
+
+Available on request.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+© 2025 Tim Daly
