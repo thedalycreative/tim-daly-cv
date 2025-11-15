@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="en" id="top">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tim Daly — Web & IT CV</title>
-  <meta name="description" content="CV website for Tim Daly – Web Development, IT, Systems Administration and Government Technology.">
+  <meta name="description"
+    content="CV website for Tim Daly – Web Development, IT, Systems Administration and Government Technology.">
 
   <!-- Bootstrap CSS & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +18,8 @@
       --bg: #ffffff;
       --bg-alt: #f7f7f9;
       --text: #212529;
-      --muted: #495057; /* improved contrast for accessibility */
+      --muted: #495057;
+      /* improved contrast for accessibility */
       --accent: #5794ef;
       --chip-border: #e5e5e5;
       --chip-bg: #fafafa;
@@ -31,7 +34,8 @@
         --bg: #050608;
         --bg-alt: #101119;
         --text: #f1f1f5;
-        --muted: #d4d8e6 !important; /* improved contrast for accessibility */
+        --muted: #d4d8e6 !important;
+        /* improved contrast for accessibility */
         --accent: #9ccafb;
         --chip-border: #2a2c3a;
         --chip-bg: #151623;
@@ -43,7 +47,11 @@
     }
 
     /* ========== BASE ========== */
-    *, *::before, *::after { box-sizing: border-box; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
 
     body {
       background: var(--bg);
@@ -51,11 +59,19 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
-    a { color: var(--accent); }
-    a:hover { color: var(--accent); opacity: 0.9; }
+    a {
+      color: var(--accent);
+    }
+
+    a:hover {
+      color: var(--accent);
+      opacity: 0.9;
+    }
 
     /* ========== NAVBAR ========== */
-    .main-nav { background: var(--nav-bg); }
+    .main-nav {
+      background: var(--nav-bg);
+    }
 
     .main-nav,
     .main-nav .nav-link {
@@ -64,16 +80,20 @@
       font-size: 0.95rem;
     }
 
-    .main-nav, 
+    .main-nav,
     .navbar-brand {
       color: #ffffff !important;
       font-family: serif;
       font-size: 2.95rem;
     }
 
-    .main-nav .nav-link:hover { opacity: 0.8; }
+    .main-nav .nav-link:hover {
+      opacity: 0.8;
+    }
 
-    .navbar-toggler-icon { filter: invert(1); }
+    .navbar-toggler-icon {
+      filter: invert(1);
+    }
 
     /* ========== HERO ========== */
     .hero {
@@ -89,14 +109,19 @@
       opacity: 0.8;
     }
 
-    .hero .lead { max-width: 44rem; }
-    .hero-chips { margin-bottom: 0.5rem; }
+    .hero .lead {
+      max-width: 44rem;
+    }
+
+    .hero-chips {
+      margin-bottom: 0.5rem;
+    }
 
     /* ========== TECH STACK STRIP ========== */
     .tech-strip {
       margin-top: 1.5rem;
       padding-top: 0.75rem;
-      border-top: 1px solid rgba(255,255,255,0.15);
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
       font-size: 0.85rem;
     }
 
@@ -106,12 +131,14 @@
       gap: 0.3rem;
       padding: 0.2rem 0.6rem;
       border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.25);
+      border: 1px solid rgba(255, 255, 255, 0.25);
       margin: 0.15rem 0.3rem 0 0;
       white-space: nowrap;
     }
 
-    .tech-pill i { font-size: 0.95rem; }
+    .tech-pill i {
+      font-size: 0.95rem;
+    }
 
     /* ========== CHIPS ========== */
     .chip {
@@ -151,8 +178,14 @@
     }
 
     /* ========== SECTIONS ========== */
-    .section { padding: 3rem 0; }
-    .section-alt { padding: 3rem 0; background: var(--bg-alt); }
+    .section {
+      padding: 3rem 0;
+    }
+
+    .section-alt {
+      padding: 3rem 0;
+      background: var(--bg-alt);
+    }
 
     .section-title {
       font-weight: 700;
@@ -180,7 +213,7 @@
       border-radius: 0.9rem;
       border: 1px solid var(--border);
       background: var(--bg);
-        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 
     }
 
@@ -189,7 +222,9 @@
       border-bottom: 1px solid currentColor;
     }
 
-    .link-underline:hover { opacity: 0.85; }
+    .link-underline:hover {
+      opacity: 0.85;
+    }
 
     .card-body {
       padding: 1rem;
@@ -222,17 +257,31 @@
     }
 
     /* ========== FOOTER ========== */
-    .footer { background: var(--bg-alt); color: var(--muted); }
+    .footer {
+      background: var(--bg-alt);
+      color: var(--muted);
+    }
 
     /* ========== TYPOGRAPHY ========== */
-    p { line-height: 1.55; }
-    .small { font-size: 0.86rem; }
-    .text-muted { color: var(--muted) !important; }
+    p {
+      line-height: 1.55;
+    }
+
+    .small {
+      font-size: 0.86rem;
+    }
+
+    .text-muted {
+      color: var(--muted) !important;
+    }
 
     /* ========== PRINT ========== */
     @media print {
+
       .no-print,
-      .navbar { display: none !important; }
+      .navbar {
+        display: none !important;
+      }
 
       body {
         background: #ffffff;
@@ -255,25 +304,34 @@
       .summary-card,
       .skill-card,
       .project-card,
-      .edu-card { box-shadow: none !important; }
+      .edu-card {
+        box-shadow: none !important;
+      }
 
-    .card-body { 
-      padding: 0.75rem !important; 
-      color: var(--muted) !important;
-      accent-color: var(--accent); 
-    }
+      .card-body {
+        padding: 0.75rem !important;
+        color: var(--muted) !important;
+        accent-color: var(--accent);
+      }
 
-      a[href]:after { content: ""; }
-      a[href]:after { content: ""; }
+      a[href]:after {
+        content: "";
+      }
+
+      a[href]:after {
+        content: "";
+      }
     }
-  </style></head>
+  </style>
+</head>
+
 <body>
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg main-nav" aria-label="Primary navigation">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#top">Timothy Daly</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
-              aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="nav">
@@ -315,13 +373,15 @@
 
           <!-- Tech stack strip -->
           <div class="tech-strip" aria-label="Primary technology stack">
-            <span class="me-2 fw-semibold small"><i class="bi bi-terminal me-1" aria-hidden="true"></i>Tech stack:</span>
+            <span class="me-2 fw-semibold small"><i class="bi bi-terminal me-1" aria-hidden="true"></i>Tech
+              stack:</span>
             <span class="tech-pill"><i class="bi bi-filetype-html" aria-hidden="true"></i><span>HTML</span></span>
             <span class="tech-pill"><i class="bi bi-filetype-css" aria-hidden="true"></i><span>CSS</span></span>
             <span class="tech-pill"><i class="bi bi-filetype-js" aria-hidden="true"></i><span>JavaScript</span></span>
             <span class="tech-pill"><i class="bi bi-node-plus" aria-hidden="true"></i><span>Node.js</span></span>
             <span class="tech-pill"><i class="bi bi-database" aria-hidden="true"></i><span>MongoDB</span></span>
-            <span class="tech-pill"><i class="bi bi-shield-lock" aria-hidden="true"></i><span>Cyber security</span></span>
+            <span class="tech-pill"><i class="bi bi-shield-lock" aria-hidden="true"></i><span>Cyber
+                security</span></span>
           </div>
 
           <div class="d-flex flex-wrap gap-2 mt-3">
@@ -356,7 +416,8 @@
                 </li>
                 <li class="d-flex">
                   <i class="bi bi-linkedin me-2 text-muted" aria-hidden="true"></i>
-                  <span><a class="link-underline" href="https://www.linkedin.com/in/thetimdaly" target="_blank" rel="noopener">linkedin.com/in/thetimdaly</a></span>
+                  <span><a class="link-underline" href="https://www.linkedin.com/in/thetimdaly" target="_blank"
+                      rel="noopener">linkedin.com/in/thetimdaly</a></span>
                 </li>
               </ul>
             </div>
@@ -466,9 +527,10 @@
             <li>Advise on data-informed marketing and practical AI use in small business workflows.</li>
           </ul>
         </div>
-<br>
+        <br>
         <div class="timeline-item">
-          <h3 class="h5 mb-1">Technology administrator <span class="--text-muted">— Department of Transport, Western Australia</span></h3>
+          <h3 class="h5 mb-1">Technology administrator <span class="--text-muted">— Department of Transport, Western
+              Australia</span></h3>
           <div class="small --text-muted mb-1">June 2024 – January 2025</div>
           <p class="small mb-1">
             Supported People and Culture technology systems, including payroll and online training platforms,
@@ -476,27 +538,34 @@
           </p>
           <ul class="small mb-0">
             <li>Streamlined online training update processes, reducing processing time by approximately 20 percent.</li>
-            <li>Implemented automated email notifications for staff bank detail changes, reducing manual intervention and enquiries to Employee Services.</li>
-            <li>Acted as second-in-charge in a six-person team, providing technical guidance and maintaining relationships with executive stakeholders and service areas.</li>
+            <li>Implemented automated email notifications for staff bank detail changes, reducing manual intervention
+              and enquiries to Employee Services.</li>
+            <li>Acted as second-in-charge in a six-person team, providing technical guidance and maintaining
+              relationships with executive stakeholders and service areas.</li>
           </ul>
         </div>
-<br>
+        <br>
         <div class="timeline-item">
-          <h3 class="h5 mb-1">Court technology and resource officer <span class="--text-muted">— Supreme Court of Western Australia</span></h3>
+          <h3 class="h5 mb-1">Court technology and resource officer <span class="--text-muted">— Supreme Court of
+              Western Australia</span></h3>
           <div class="small --text-muted mb-1">July 2023 – May 2024</div>
           <p class="small mb-1">
             Delivered and supported technology that underpins the operations of the Supreme Court,
             balancing innovation with the expectations of the judicial environment.
           </p>
           <ul class="small mb-0">
-            <li>Led the development and launch of the Court’s intranet, improving internal communication and access to resources.</li>
-            <li>Modernised courtroom booking with an integrated digital calendar system that replaced manual processes.</li>
-            <li>Coordinated responses to critical technology incidents, maintaining transparency and continuity of proceedings.</li>
+            <li>Led the development and launch of the Court’s intranet, improving internal communication and access to
+              resources.</li>
+            <li>Modernised courtroom booking with an integrated digital calendar system that replaced manual processes.
+            </li>
+            <li>Coordinated responses to critical technology incidents, maintaining transparency and continuity of
+              proceedings.</li>
           </ul>
         </div>
-<br>
+        <br>
         <div class="timeline-item">
-          <h3 class="h5 mb-1">Court support officer <span class="--text-muted">— District Court of Western Australia</span></h3>
+          <h3 class="h5 mb-1">Court support officer <span class="--text-muted">— District Court of Western
+              Australia</span></h3>
           <div class="small --text-muted mb-1">November 2022 – July 2023</div>
           <p class="small mb-1">
             Managed civil subpoena processing and storage, providing client-facing support while maintaining
@@ -507,9 +576,10 @@
             <li>Identified and implemented workflow improvements in a sensitive and highly trusted environment.</li>
           </ul>
         </div>
-<br>
+        <br>
         <div class="timeline-item">
-          <h3 class="h5 mb-1">Resident support officer / team leader <span class="--text-muted">— COVID-19 Quarantine Victoria</span></h3>
+          <h3 class="h5 mb-1">Resident support officer / team leader <span class="--text-muted">— COVID-19 Quarantine
+              Victoria</span></h3>
           <div class="small --text-muted mb-1">December 2020 – April 2022</div>
           <p class="small mb-1">
             Led a large team of resident support officers in hotel quarantine, ensuring safe and consistent operations
@@ -520,15 +590,17 @@
             <li>Supported staff wellbeing while maintaining operational standards and compliance.</li>
           </ul>
         </div>
-<br>
+        <br>
         <div class="timeline-item">
-          <h3 class="h5 mb-1">Digital solutions specialist <span class="--text-muted">— White Pages Australia</span></h3>
+          <h3 class="h5 mb-1">Digital solutions specialist <span class="--text-muted">— White Pages Australia</span>
+          </h3>
           <div class="small --text-muted mb-1">November 2018 – October 2020</div>
           <ul class="small mb-0">
-            <li>Exceeded sales and customer satisfaction targets while improving call centre efficiency and digital product adoption.</li>
+            <li>Exceeded sales and customer satisfaction targets while improving call centre efficiency and digital
+              product adoption.</li>
           </ul>
         </div>
-<br>
+        <br>
         <div class="timeline-item">
           <h3 class="h5 mb-1">Flight attendant (cabin crew) <span class="--text-muted">— Jetstar Airways</span></h3>
           <div class="small --text-muted mb-1">March 2013 – February 2018</div>
@@ -554,7 +626,11 @@
         <div class="col-md-6">
           <div class="card project-card h-100">
             <div class="card-body">
-              <img src="https://github.com/thedalycreative/td-resume-cv-Nov25/blob/timdaly-resume-cv/images/drumplings.png?raw=true" class="img-fluid rounded-3 mb-2" alt="Bold black text reading DRUMPS overlaid on a stylized golden dumpling with sauce drips against a vibrant orange background, representing the Drumplings fusion restaurant brand identity with a modern and playful aesthetic">
+              
+              <img
+                src="https://github.com/thedalycreative/td-resume-cv-Nov25/blob/timdaly-resume-cv/images/drumplings.png?raw=true"
+                class="img-fluid rounded-3 mb-2"
+                alt="Bold black text reading DRUMPS overlaid on a stylized golden dumpling with sauce drips against a vibrant orange background, representing the Drumplings fusion restaurant brand identity with a modern and playful aesthetic">
               <h3 class="h6 mb-1">Drumplings — Melbourne fusion restaurant</h3>
               <p class="small mb-1">
                 Website redesign for a Melbourne-based fusion dumpling restaurant. Focused on improving user flow,
@@ -568,7 +644,8 @@
               </div>
               <p class="small mb-0 mt-2">
                 <i class="bi bi-link-45deg" aria-hidden="true"></i>
-                <a href="https://www.drumplings.com.au" target="_blank" rel="noopener" class="link-underline">drumplings.com.au</a>
+                <a href="https://www.drumplings.com.au" target="_blank" rel="noopener"
+                  class="link-underline">drumplings.com.au</a>
               </p>
             </div>
           </div>
@@ -578,7 +655,8 @@
         <div class="col-md-6">
           <div class="card project-card h-100">
             <div class="card-body">
-              <img src="/images/preservation-framers.png" class="img-fluid rounded-3 mb-2" alt="Preservation Framers website homepage preview">
+              <img src="/images/preservation-framers.png" class="img-fluid rounded-3 mb-2"
+                alt="Preservation Framers website homepage preview">
               <h3 class="h6 mb-1">Preservation Framers — boutique art framing</h3>
               <p class="small mb-1">
                 Brand refresh and website development for a premium Perth-based art framing studio. Work included
@@ -592,7 +670,8 @@
               </div>
               <p class="small mb-0 mt-2">
                 <i class="bi bi-link-45deg" aria-hidden="true"></i>
-                <a href="https://www.preservationframers.com.au" target="_blank" rel="noopener" class="link-underline">preservationframers.com.au</a>
+                <a href="https://www.preservationframers.com.au" target="_blank" rel="noopener"
+                  class="link-underline">preservationframers.com.au</a>
               </p>
             </div>
           </div>
@@ -602,11 +681,13 @@
         <div class="col-md-6">
           <div class="card project-card h-100">
             <div class="card-body">
-              <img src="/images/DORA-logo-portrait.jpg" class="img-fluid rounded-3 mb-2" alt="Dora Health and Wellbeing website homepage preview">
+              <img src="/images/DORA-logo-portrait.jpg" class="img-fluid rounded-3 mb-2"
+                alt="Dora Health and Wellbeing website homepage preview">
               <h3 class="h6 mb-1">Dora Health & Wellbeing — care services provider</h3>
               <p class="small mb-1">
                 Branding, website design and operational digital setup for an in-home care and wellbeing organisation.
-                Work included brand identity, colour systems, web build, onboarding pathways and digital ecosystem planning.
+                Work included brand identity, colour systems, web build, onboarding pathways and digital ecosystem
+                planning.
               </p>
               <div class="tag-row" aria-label="Dora Health project tags">
                 <span class="tag-pill"><i class="bi bi-heart-pulse" aria-hidden="true"></i>Care services</span>
@@ -616,7 +697,8 @@
               </div>
               <p class="small mb-0 mt-2">
                 <i class="bi bi-link-45deg" aria-hidden="true"></i>
-                <a href="https://www.dorahealth.com.au" target="_blank" rel="noopener" class="link-underline">dorahealth.com.au</a>
+                <a href="https://www.dorahealth.com.au" target="_blank" rel="noopener"
+                  class="link-underline">dorahealth.com.au</a>
               </p>
             </div>
           </div>
@@ -626,7 +708,8 @@
         <div class="col-md-6">
           <div class="card project-card h-100">
             <div class="card-body">
-              <img src="/images/thedalycreative.jpeg" class="img-fluid rounded-3 mb-2" alt="The Daly Creative website homepage preview">
+              <img src="/images/thedalycreative.jpeg" class="img-fluid rounded-3 mb-2"
+                alt="The Daly Creative website homepage preview">
               <h3 class="h6 mb-1">The Daly Creative — personal website & brand</h3>
               <p class="small mb-1">
                 My main digital identity and creative business hub — showcasing web design, branding,
@@ -639,7 +722,8 @@
               </div>
               <p class="small mb-0 mt-2">
                 <i class="bi bi-link-45deg" aria-hidden="true"></i>
-                <a href="https://www.thedalycreative.com" target="_blank" rel="noopener" class="link-underline">thedalycreative.com</a>
+                <a href="https://www.thedalycreative.com" target="_blank" rel="noopener"
+                  class="link-underline">thedalycreative.com</a>
               </p>
             </div>
           </div>
@@ -756,4 +840,5 @@
     });
   </script>
 </body>
+
 </html>
