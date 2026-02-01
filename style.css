@@ -1,0 +1,310 @@
+
+  /* ========== THEME TOKENS ========== */
+  :root {
+      --bg: #ffffff;
+      --bg-alt: #f7f7f9;
+      --text: #212529;
+      --muted: #495057;
+      /* improved contrast for accessibility */
+      --accent: #5794ef;
+      --chip-border: #e5e5e5;
+      --chip-bg: #fafafa;
+      --border: #e6e6ea;
+      --nav-bg: #000000;
+      --hero-grad-start: #0a0a0a;
+      --hero-grad-end: #1b1b1b;
+  }
+
+  @media (prefers-color-scheme: dark) {
+      :root {
+          --bg: #050608;
+          --bg-alt: #101119;
+          --text: #f1f1f5;
+          --muted: #d4d8e6 !important;
+          /* improved contrast for accessibility */
+          --accent: #9ccafb;
+          --chip-border: #2a2c3a;
+          --chip-bg: #151623;
+          --border: #262739;
+          --nav-bg: #000000;
+          --hero-grad-start: #050509;
+          --hero-grad-end: #151623;
+      }
+  }
+
+  /* ========== BASE ========== */
+  *,
+  *::before,
+  *::after {
+      box-sizing: border-box;
+  }
+
+  body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  a {
+      color: var(--accent);
+  }
+
+  a:hover {
+      color: var(--accent);
+      opacity: 0.9;
+  }
+
+  /* ========== NAVBAR ========== */
+  .main-nav {
+      background: var(--nav-bg);
+  }
+
+  .main-nav,
+  .main-nav .nav-link {
+      color: #ffffff !important;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 0.95rem;
+  }
+
+  .main-nav,
+  .navbar-brand {
+      color: #ffffff !important;
+      font-family: serif;
+      font-size: 2.95rem;
+  }
+
+  .main-nav .nav-link:hover {
+      opacity: 0.8;
+  }
+
+  .navbar-toggler-icon {
+      filter: invert(1);
+  }
+
+  /* ========== HERO ========== */
+  .hero {
+      background: linear-gradient(135deg, var(--hero-grad-start), var(--hero-grad-end));
+      color: #ffffff;
+      padding: 4.5rem 0 3.5rem;
+  }
+
+  .hero-kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.75rem;
+      opacity: 0.8;
+  }
+
+  .hero .lead {
+      max-width: 44rem;
+  }
+
+  .hero-chips {
+      margin-bottom: 0.5rem;
+  }
+
+  /* ========== TECH STACK STRIP ========== */
+  .tech-strip {
+      margin-top: 1.5rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      font-size: 0.85rem;
+  }
+
+  .tech-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      margin: 0.15rem 0.3rem 0 0;
+      white-space: nowrap;
+  }
+
+  .tech-pill i {
+      font-size: 0.95rem;
+  }
+
+  /* ========== CHIPS ========== */
+  .chip {
+      display: inline-block;
+      border-radius: 999px;
+      border: 1px solid var(--chip-border);
+      background: var(--chip-bg);
+      padding: 0.35rem 0.75rem;
+      margin: 0.25rem 0.35rem 0 0;
+      font-size: 0.8rem;
+      color: var(--text);
+      transition: color 0.3s ease;
+  }
+
+  /* ========== TAGS ========== */
+  .tag-row {
+      margin-top: 0.5rem;
+  }
+
+  .tag-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      border: 1px solid var(--chip-border);
+      padding: 0.2rem 0.55rem;
+      margin: 0.12rem 0.3rem 0 0;
+      font-size: 0.72rem;
+      color: var(--muted);
+      background: var(--bg-alt);
+      white-space: nowrap;
+  }
+
+  .tag-pill i {
+      font-size: 0.8rem;
+      margin-right: 0.25rem;
+  }
+
+  /* ========== SECTIONS ========== */
+  .section {
+      padding: 3rem 0;
+  }
+
+  .section-alt {
+      padding: 3rem 0;
+      background: var(--bg-alt);
+  }
+
+  .section-title {
+      font-weight: 700;
+      font-size: 1.3rem;
+      letter-spacing: 0.03em;
+      text-transform: none;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+  }
+
+  .section-title-icon {
+      font-size: 1.2rem;
+      color: var(--accent);
+  }
+
+  /* ========== CARDS & UTILS ========== */
+  .summary-card,
+  .skill-card,
+  .project-card,
+  .edu-card {
+      border-radius: 0.9rem;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+  }
+
+  .link-underline {
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+  }
+
+  .link-underline:hover {
+      opacity: 0.85;
+  }
+
+  .card-body {
+      padding: 1rem;
+      color: var(--muted);
+  }
+
+  /* ========== TIMELINE ========== */
+  .timeline {
+      border-left: 2px solid var(--border);
+      padding-left: 1rem;
+      margin-left: 0.3rem;
+  }
+
+  .timeline-item {
+      position: relative;
+      margin-bottom: 1.5rem;
+      padding-left: 0.2rem;
+  }
+
+  .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 0.4rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px var(--bg);
+  }
+
+  /* ========== FOOTER ========== */
+  .footer {
+      background: var(--bg-alt);
+      color: var(--muted);
+  }
+
+  /* ========== TYPOGRAPHY ========== */
+  p {
+      line-height: 1.55;
+  }
+
+  .small {
+      font-size: 0.86rem;
+  }
+
+  .text-muted {
+      color: var(--muted) !important;
+  }
+
+  /* ========== PRINT ========== */
+  @media print {
+
+      .no-print,
+      .navbar {
+          display: none !important;
+      }
+
+      body {
+          background: #ffffff;
+          color: #000000;
+          font-size: 11pt;
+      }
+
+      .hero {
+          background: #ffffff;
+          color: #000000;
+          padding: 0 0 1rem;
+      }
+
+      .section,
+      .section-alt {
+          padding: 1.5rem 0;
+          background: #ffffff !important;
+      }
+
+      .summary-card,
+      .skill-card,
+      .project-card,
+      .edu-card {
+          box-shadow: none !important;
+      }
+
+      .card-body {
+          padding: 0.75rem !important;
+          color: var(--muted) !important;
+          accent-color: var(--accent);
+      }
+
+      a[href]:after {
+          content: "";
+      }
+
+      a[href]:after {
+          content: "";
+      }
+  }
