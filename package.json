@@ -1,0 +1,17 @@
+{
+  "name": "tim-daly-cv",
+  "version": "2.0.0",
+  "private": true,
+  "description": "CV website for Tim Daly — trainer, learning technologist and web developer (Perth, WA).",
+  "type": "module",
+  "scripts": {
+    "pdf": "node scripts/build-pdf.mjs",
+    "serve": "npx --yes serve -l 5501 ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "5.3.3",
+    "bootstrap-icons": "1.11.3",
+    "playwright": "^1.48.0"
+  }
+}

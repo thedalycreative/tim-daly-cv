@@ -1,33 +1,59 @@
 <!doctype html>
-<html lang="en" id="top">
+<html lang="en-AU" id="top">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--Page Title-->
-  <title>Tim Daly — Web & IT CV</title>
-  <!-- Favicon -->
-  <i class="fa-solid fa-laptop-code" style="color: #ff6251;"></i>
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>{}</text></svg>"
-    type="image/svg+xml">
-  <!-- Description -->
+  <title>Tim Daly — Trainer, Learning Technologist &amp; Web Developer | Perth, WA</title>
   <meta name="description"
-    content="CV website for Tim Daly – Web Development, IT, Systems Administration and Government Technology.">
-  <!-- Bootstrap CSS & Icons -
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
--->
+    content="CV of Tim Daly — Perth-based trainer and assessor (TAE40122) who designs and builds the digital learning resources he teaches from. Learning and development, LMS administration and web development.">
+  <meta name="author" content="Timothy Daly">
+  <meta name="theme-color" content="#0f172a">
 
+  <!-- Open Graph (link previews on LinkedIn, Slack, etc.) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Tim Daly — Trainer & Learning Technologist">
+  <meta property="og:description"
+    content="A trainer who builds the digital learning materials he teaches from. Perth, Western Australia.">
+  <meta property="og:image" content="images/thedalycreative.jpeg">
 
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Bootstrap 5.3.3 + Bootstrap Icons (CDN with Subresource Integrity) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Timothy Daly",
+    "alternateName": "Tim Daly",
+    "jobTitle": "Trainer & Industry Specialist",
+    "worksFor": { "@type": "Organization", "name": "Equinim College of Technology" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Perth", "addressRegion": "WA", "addressCountry": "AU" },
+    "url": "https://thedalycreative.com",
+    "sameAs": ["https://www.linkedin.com/in/thetimdaly"],
+    "hasCredential": "TAE40122 Certificate IV in Training and Assessment"
+  }
+  </script>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="90" tabindex="0">
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg main-nav" aria-label="Primary navigation">
+  <a class="visually-hidden-focusable skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark main-nav sticky-top no-print" aria-label="Primary navigation">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#top">Timothy Daly</a>
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#top">
+        <img src="images/favicon.svg" width="28" height="28" alt="" aria-hidden="true">
+        Tim Daly
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,508 +64,716 @@
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Qualifications</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <button class="btn btn-outline-light ms-lg-3 no-print" data-action="print" type="button">
-          <i class="bi bi-download" aria-hidden="true"></i>
-          <span class="visually-hidden">Download this CV as PDF</span>
-          <span aria-hidden="true"> Download PDF</span>
-        </button>
+        <a class="btn btn-accent btn-sm ms-lg-3" href="Tim-Daly-CV.pdf" download>
+          <i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i> Download PDF
+        </a>
       </div>
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- ===================== HERO ===================== -->
   <header class="hero" id="hero">
     <div class="container">
       <div class="row align-items-center g-4">
         <div class="col-12 col-lg-8">
-          <p class="hero-kicker mb-3">Web development · IT systems · government technology</p>
-          <h2 class="display-7 fw-semibold --text-muted">Technology and web projects with a human-centered edge</h2>
-          <p class="display mb-3">
-            I design, deliver and support digital systems that work for people — from intranets and booking
-            systems in Western Australian courts, to HR technology and self-service tools at the Department of
-            Transport, and modern web experiences through <span class="fw-semibold">The Daly Creative</span>.
+          <p class="hero-kicker mb-2">Training &amp; assessment · Learning technology · Web development</p>
+          <h1 class="display-5 fw-bold mb-2">Timothy Daly</h1>
+          <p class="hero-tagline mb-3">I train people, and I build the digital tools they learn from.</p>
+          <p class="hero-lead mb-4">
+            Trainer and assessor (TAE40122) currently teaching at a Perth RTO, with fifteen years of coaching,
+            facilitation and frontline leadership behind me. I've administered an enterprise LMS across a WA
+            government department and I design and build interactive learning resources myself, so I can take
+            training from the first draft to the classroom without handing it off.
           </p>
-          <div class="hero-chips mb-3" aria-label="Key strengths">
-            <span class="chip">Back-end web development</span>
-            <span class="chip">IT and systems administration</span>
-            <span class="chip">Project and process improvement</span>
-            <span class="chip">Cyber security foundations</span>
+
+          <div class="d-flex flex-wrap gap-2 mb-4" aria-label="Key strengths">
+            <span class="chip"><i class="bi bi-easel" aria-hidden="true"></i> Classroom delivery</span>
+            <span class="chip"><i class="bi bi-puzzle" aria-hidden="true"></i> Learning resource design</span>
+            <span class="chip"><i class="bi bi-hdd-network" aria-hidden="true"></i> LMS administration</span>
+            <span class="chip"><i class="bi bi-code-slash" aria-hidden="true"></i> Web &amp; AI development</span>
           </div>
 
-          <!-- Tech stack strip -->
-          <div class="tech-strip" aria-label="Primary technology stack">
-            <span class="me-2 fw-semibold small"><i class="bi bi-terminal me-1" aria-hidden="true"></i>Tech
-              stack:</span>
-            <span class="tech-pill"><i class="bi bi-filetype-html" aria-hidden="true"></i><span>HTML</span></span>
-            <span class="tech-pill"><i class="bi bi-filetype-css" aria-hidden="true"></i><span>CSS</span></span>
-            <span class="tech-pill"><i class="bi bi-filetype-js" aria-hidden="true"></i><span>JavaScript</span></span>
-            <span class="tech-pill"><i class="bi bi-node-plus" aria-hidden="true"></i><span>Node.js</span></span>
-            <span class="tech-pill"><i class="bi bi-database" aria-hidden="true"></i><span>MongoDB</span></span>
-            <span class="tech-pill"><i class="bi bi-shield-lock" aria-hidden="true"></i><span>Cyber
-                security</span></span>
-          </div>
-
-          <div class="d-flex flex-wrap gap-2 mt-3">
-            <a href="#experience" class="btn btn-primary">
-              <i class="bi bi-diagram-3" aria-hidden="true"></i> View experience
+          <div class="d-flex flex-wrap gap-2 no-print">
+            <a href="Tim-Daly-CV.pdf" class="btn btn-accent" download>
+              <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Download CV (PDF)
             </a>
             <a href="#contact" class="btn btn-outline-light">
-              <i class="bi bi-envelope" aria-hidden="true"></i> Contact me
+              <i class="bi bi-envelope" aria-hidden="true"></i> Get in touch
             </a>
+            <button class="btn btn-link link-light text-decoration-none" data-action="print" type="button">
+              <i class="bi bi-printer" aria-hidden="true"></i> Print this page
+            </button>
           </div>
         </div>
+
         <div class="col-12 col-lg-4">
-          <div class="card summary-card" aria-label="Summary panel">
-            <div class="card-body">
-              <h2 class="h5 mb-3 --text-muted">Quick snapshot</h2>
-              <ul class="list-unstyled mb-0 small">
-                <li class="d-flex mb-2">
-                  <i class="bi bi-geo-alt me-2" aria-hidden="true"></i>
-                  <span>Fremantle / Perth, Western Australia</span>
-                </li>
-                <li class="d-flex mb-2">
-                  <i class="bi bi-briefcase me-2 text-white" aria-hidden="true"></i>
-                  <span>Web development, IT systems, government technology</span>
-                </li>
-                <li class="d-flex mb-2">
-                  <i class="bi bi-layers me-2 text-muted" aria-hidden="true"></i>
-                  <span>Delivered intranet, booking, HR automation and process optimisation projects</span>
-                </li>
-                <li class="d-flex mb-2">
-                  <i class="bi bi-people me-2 text-muted" aria-hidden="true"></i>
-                  <span>Known for calm leadership, inclusive culture and clear communication</span>
-                </li>
-                <li class="d-flex">
-                  <i class="bi bi-linkedin me-2 text-muted" aria-hidden="true"></i>
-                  <span><a class="link-underline" href="https://www.linkedin.com/in/thetimdaly" target="_blank"
-                      rel="noopener">linkedin.com/in/thetimdaly</a></span>
-                </li>
+          <div class="card summary-card border-0">
+            <div class="card-body p-4">
+              <h2 class="h6 text-uppercase snapshot-title mb-3">Quick snapshot</h2>
+              <ul class="list-unstyled mb-0 snapshot-list">
+                <li><i class="bi bi-geo-alt" aria-hidden="true"></i>
+                  <span>Fremantle / Perth, WA · open to regional travel, hybrid or remote</span></li>
+                <li><i class="bi bi-patch-check" aria-hidden="true"></i>
+                  <span>Certificate IV in Training and Assessment (TAE40122)</span></li>
+                <li><i class="bi bi-mortarboard" aria-hidden="true"></i>
+                  <span>Trainer &amp; Industry Specialist, Equinim College (RTO 45758)</span></li>
+                <li><i class="bi bi-calendar-check" aria-hidden="true"></i>
+                  <span>Available now · full-time, part-time or contract</span></li>
+                <li><i class="bi bi-shield-check" aria-hidden="true"></i>
+                  <span>Current National Police Check · WA driver's licence</span></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Stats -->
+      <div class="row g-3 mt-4 stats" aria-label="Highlights">
+        <div class="col-6 col-md-3">
+          <div class="stat"><span class="stat-num">15 yrs</span><span class="stat-label">training, coaching &amp;
+              facilitation</span></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat"><span class="stat-num">60+</span><span class="stat-label">staff trained at COVID-19
+              Quarantine Victoria</span></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat"><span class="stat-num">~20%</span><span class="stat-label">faster LMS training
+              updates (ELMO)</span></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat"><span class="stat-num">12–25</span><span class="stat-label">students per diploma
+              cohort</span></div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- PROFILE -->
-  <section id="profile" class="section" aria-labelledby="profile-heading">
-    <div class="container">
-      <h2 class="section-title" id="profile-heading">
-        <i class="bi bi-person-circle section-title-icon" aria-hidden="true"></i>
-        Professional profile
-      </h2>
-      <p>
-        I am a web and IT professional with experience in high-stakes public sector environments,
-        where reliability, clarity and integrity are essential. I combine back-end web development
-        and cyber security knowledge with hands-on experience in court technology, HR systems and
-        operations leadership.
-      </p>
-      <p>
-        My work includes launching the Supreme Court of Western Australia’s staff intranet,
-        modernising courtroom booking workflows, streamlining HR technology at the Department of
-        Transport, and delivering websites and digital campaigns through my freelance studio,
-        <span class="fw-semibold">The Daly Creative</span>. Across all of this, I focus on practical solutions,
-        inclusive collaboration and making complex systems easier for people to use.
-      </p>
-    </div>
-  </section>
+  <main id="main">
 
-  <!-- SKILLS -->
-  <section id="skills" class="section section-alt" aria-labelledby="skills-heading">
-    <div class="container">
-      <h2 class="section-title" id="skills-heading">
-        <i class="bi bi-lightning-charge section-title-icon" aria-hidden="true"></i>
-        Core skills
-      </h2>
-      <div class="row g-3">
-        <div class="col-md-6 col-lg-3">
-          <div class="skill-card h-100 p-3">
-            <h3 class="h6 mb-2">Web and back-end</h3>
-            <ul class="small mb-0">
-              <li>HTML, CSS and JavaScript</li>
-              <li>Node.js, Express and REST APIs</li>
-              <li>MongoDB and NoSQL fundamentals</li>
-              <li>Responsive and accessible user interfaces</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="skill-card h-100 p-3">
-            <h3 class="h6 mb-2">IT and systems</h3>
-            <ul class="small mb-0">
-              <li>Enterprise HR and ESS platforms (ELMO, Oracle / DayForce)</li>
-              <li>Microsoft 365 and enterprise tools, Azure Active Directory</li>
-              <li>Citrix, remote access, VNC and IP management</li>
-              <li>Court AV and streaming, conferencing (WebEx, Cisco)</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="skill-card h-100 p-3">
-            <h3 class="h6 mb-2">Projects and delivery</h3>
-            <ul class="small mb-0">
-              <li>Project and change management</li>
-              <li>Process improvement and automation</li>
-              <li>Vendor coordination and budget awareness</li>
-              <li>Documentation, procedures and policy support</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="skill-card h-100 p-3">
-            <h3 class="h6 mb-2">People and culture</h3>
-            <ul class="small mb-0">
-              <li>Team leadership and coaching</li>
-              <li>Stakeholder and client engagement</li>
-              <li>Diversity and inclusion advocacy</li>
-              <li>Calm crisis and incident management</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section" aria-labelledby="experience-heading">
-    <div class="container">
-      <h2 class="section-title" id="experience-heading">
-        <i class="bi bi-briefcase section-title-icon" aria-hidden="true"></i>
-        Experience
-      </h2>
-      <div class="timeline" aria-label="Career timeline">
-        <div class="timeline-item">
-          <h3 class="h5 mb-1">Chief of everything <span class="--text-muted">— The Daly Creative</span></h3>
-          <div class="small --text-muted mb-1">February 2025 – Present · Fremantle / Perth, Western Australia</div>
-          <p class="small mb-1">
-            Freelance studio focused on helping Perth businesses grow smarter through web development,
-            digital marketing and AI-informed strategy.
-          </p>
-          <ul class="small mb-0">
-            <li>Design and build responsive websites and landing pages for local businesses.</li>
-            <li>Develop content and brand assets aligned with client goals and audiences.</li>
-            <li>Advise on data-informed marketing and practical AI use in small business workflows.</li>
-          </ul>
-        </div>
-        <br>
-        <div class="timeline-item">
-          <h3 class="h5 mb-1">Technology administrator <span class="--text-muted">— Department of Transport, Western
-              Australia</span></h3>
-          <div class="small --text-muted mb-1">June 2024 – January 2025</div>
-          <p class="small mb-1">
-            Supported People and Culture technology systems, including payroll and online training platforms,
-            with a focus on process improvement and automation.
-          </p>
-          <ul class="small mb-0">
-            <li>Streamlined online training update processes, reducing processing time by approximately 20 percent.</li>
-            <li>Implemented automated email notifications for staff bank detail changes, reducing manual intervention
-              and enquiries to Employee Services.</li>
-            <li>Acted as second-in-charge in a six-person team, providing technical guidance and maintaining
-              relationships with executive stakeholders and service areas.</li>
-          </ul>
-        </div>
-        <br>
-        <div class="timeline-item">
-          <h3 class="h5 mb-1">Court technology and resource officer <span class="--text-muted">— Supreme Court of
-              Western Australia</span></h3>
-          <div class="small --text-muted mb-1">July 2023 – May 2024</div>
-          <p class="small mb-1">
-            Delivered and supported technology that underpins the operations of the Supreme Court,
-            balancing innovation with the expectations of the judicial environment.
-          </p>
-          <ul class="small mb-0">
-            <li>Led the development and launch of the Court’s intranet, improving internal communication and access to
-              resources.</li>
-            <li>Modernised courtroom booking with an integrated digital calendar system that replaced manual processes.
-            </li>
-            <li>Coordinated responses to critical technology incidents, maintaining transparency and continuity of
-              proceedings.</li>
-          </ul>
-        </div>
-        <br>
-        <div class="timeline-item">
-          <h3 class="h5 mb-1">Court support officer <span class="--text-muted">— District Court of Western
-              Australia</span></h3>
-          <div class="small --text-muted mb-1">November 2022 – July 2023</div>
-          <p class="small mb-1">
-            Managed civil subpoena processing and storage, providing client-facing support while maintaining
-            high standards of confidentiality and accuracy.
-          </p>
-          <ul class="small mb-0">
-            <li>Streamlined handling and security of civil subpoenas to reinforce procedural integrity.</li>
-            <li>Identified and implemented workflow improvements in a sensitive and highly trusted environment.</li>
-          </ul>
-        </div>
-        <br>
-        <div class="timeline-item">
-          <h3 class="h5 mb-1">Resident support officer / team leader <span class="--text-muted">— COVID-19 Quarantine
-              Victoria</span></h3>
-          <div class="small --text-muted mb-1">December 2020 – April 2022</div>
-          <p class="small mb-1">
-            Led a large team of resident support officers in hotel quarantine, ensuring safe and consistent operations
-            during the pandemic.
-          </p>
-          <ul class="small mb-0">
-            <li>Provided calm leadership, rostering and resource management under constant change.</li>
-            <li>Supported staff wellbeing while maintaining operational standards and compliance.</li>
-          </ul>
-        </div>
-        <br>
-        <!--White Pages: Digital Solutions Specialist-->
-        <div class="timeline-item">
-          <h3 class="h5 mb-1">Digital solutions specialist <span class="--text-muted">— White Pages Australia</span>
-          </h3>
-          <div class="small --text-muted mb-1">November 2018 – October 2020</div>
-          <ul class="small mb-0">
-            <li>Exceeded sales and customer satisfaction targets while improving call centre efficiency and digital
-              product adoption.</li>
-          </ul>
-        </div>
-        <br>
-        <div class="timeline-item">
-          <h3 class="h5 mb-1"> Flight attendant (cabin crew) <span class="--text-muted">— Jetstar Airways</span></h3>
-          <div class="small --text-muted mb-1">March 2013 – February 2018</div>
-          <ul class="small mb-0">
-            <li>Provided high-quality service and safety in a fast-paced, highly regulated environment.</li>
-            <li>Built resilience and people skills that underpin my current work in technology and projects.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section section-alt" aria-labelledby="projects-heading">
-    <div class="container">
-      <h2 class="section-title" id="projects-heading">
-        <i class="bi bi-window-stack section-title-icon" aria-hidden="true"></i>
-        Selected projects
-      </h2>
-      <div class="row g-3">
-
-        <!-- Drumplings -->
-        <div class="col-md-6">
-          <div class="card project-card h-100">
-            <div class="card-body">
-
-              <img
-                src="https://github.com/thedalycreative/td-resume-cv-Nov25/blob/timdaly-resume-cv/images/drumplings.png?raw=true"
-                class="img-fluid rounded-3 mb-2"
-                alt="Bold black text reading DRUMPS overlaid on a stylized golden dumpling with sauce drips against a vibrant orange background, representing the Drumplings fusion restaurant brand identity with a modern and playful aesthetic">
-
-              <h3 class="h6 mb-1">Drumplings — Melbourne fusion restaurant</h3>
-              <p class="small mb-1">
-                Website redesign for a Melbourne-based fusion dumpling restaurant. Focused on improving user flow,
-                mobile responsiveness, SEO and presenting a clean, modern hospitality brand identity.
-              </p>
-              <div class="tag-row" aria-label="Drumplings project tags">
-                <span class="tag-pill"><i class="bi bi-window" aria-hidden="true"></i>Web design</span>
-                <span class="tag-pill"><i class="bi bi-shop" aria-hidden="true"></i>Hospitality</span>
-                <span class="tag-pill"><i class="bi bi-search" aria-hidden="true"></i>SEO</span>
-                <span class="tag-pill"><i class="bi bi-phone" aria-hidden="true"></i>Responsive</span>
-              </div>
-              <p class="small mb-0 mt-2">
-                <i class="bi bi-link-45deg" aria-hidden="true"></i>
-                <a href="https://www.drumplings.com.au" target="_blank" rel="noopener"
-                  class="link-underline">drumplings.com.au</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Preservation Framers -->
-        <div class="col-md-6">
-          <div class="card project-card h-100">
-            <div class="card-body">
-              <img
-                src="https://github.com/thedalycreative/td-resume-cv-Nov25/blob/timdaly-resume-cv/images/preservation-framers.png?raw=true"
-                class="img-fluid rounded-3 mb-2" alt="Preservation Framers website homepage preview">
-              <h3 class="h6 mb-1">Preservation Framers — boutique art framing</h3>
-              <p class="small mb-1">
-                Brand refresh and website development for a premium Perth-based art framing studio. Work included
-                information architecture, refined typography, colour palette expansion and service page structure.
-              </p>
-              <div class="tag-row" aria-label="Preservation Framers project tags">
-                <span class="tag-pill"><i class="bi bi-brush" aria-hidden="true"></i>Branding</span>
-                <span class="tag-pill"><i class="bi bi-window" aria-hidden="true"></i>Web design</span>
-                <span class="tag-pill"><i class="bi bi-image" aria-hidden="true"></i>Creative services</span>
-                <span class="tag-pill"><i class="bi bi-geo-alt" aria-hidden="true"></i>Local business</span>
-              </div>
-              <p class="small mb-0 mt-2">
-                <i class="bi bi-link-45deg" aria-hidden="true"></i>
-                <a href="https://www.preservationframers.com.au" target="_blank" rel="noopener"
-                  class="link-underline">preservationframers.com.au</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dora Health & Wellbeing -->
-        <div class="col-md-6">
-          <div class="card project-card h-100">
-            <div class="card-body">
-              <img
-                src="https://github.com/thedalycreative/td-resume-cv-Nov25/blob/timdaly-resume-cv/images/DORA-logo-portrait.jpg?raw=true"
-                class="img-fluid rounded-3 mb-2"
-                alt="Dora Health & Wellbeing logo featuring a stylized heart design in warm coral and teal colors with the text DORA HEALTH & WELLBEING in a clean modern sans-serif typeface, conveying a professional and caring brand identity for in-home health services">
-              <h3 class="h6 mb-1">Dora Health & Wellbeing — care services provider</h3>
-              <p class="small mb-1">
-                Branding, website design and operational digital setup for an in-home care and wellbeing organisation.
-                Work included brand identity, colour systems, web build, onboarding pathways and digital ecosystem
-                planning.
-              </p>
-              <div class="tag-row" aria-label="Dora Health project tags">
-                <span class="tag-pill"><i class="bi bi-heart-pulse" aria-hidden="true"></i>Care services</span>
-                <span class="tag-pill"><i class="bi bi-brush" aria-hidden="true"></i>Branding</span>
-                <span class="tag-pill"><i class="bi bi-window" aria-hidden="true"></i>Web design</span>
-                <span class="tag-pill"><i class="bi bi-people" aria-hidden="true"></i>Onboarding & journeys</span>
-              </div>
-              <p class="small mb-0 mt-2">
-                <i class="bi bi-link-45deg" aria-hidden="true"></i>
-                <a href="https://www.dorahealth.com.au" target="_blank" rel="noopener"
-                  class="link-underline">dorahealth.com.au</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- The Daly Creative -->
-        <div class="col-md-6">
-          <div class="card project-card h-100">
-
-            <img
-              src="https://github.com/thedalycreative/td-resume-cv-Nov25/blob/timdaly-resume-cv/images/thedalycreative.jpeg?raw=true"
-              class="img-fluid rounded-3 mb-2" alt="The Daly Creative website homepage preview">
-            <div class="card-body">
-              <h3 class="h6 mb-1">The Daly Creative — personal website & brand</h3>
-              <p class="small mb-1">
-                My main digital identity and creative business hub — showcasing web design, branding,
-                digital strategy and tech-focused client solutions.
-              </p>
-              <div class="tag-row" aria-label="The Daly Creative project tags">
-                <span class="tag-pill"><i class="bi bi-person" aria-hidden="true"></i>Personal brand</span>
-                <span class="tag-pill"><i class="bi bi-window" aria-hidden="true"></i>Portfolio site</span>
-                <span class="tag-pill"><i class="bi bi-megaphone" aria-hidden="true"></i>Digital strategy</span>
-              </div>
-              <p class="small mb-0 mt-2">
-                <i class="bi bi-link-45deg" aria-hidden="true"></i>
-                <a href="https://www.thedalycreative.com" target="_blank" rel="noopener"
-                  class="link-underline">thedalycreative.com</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <p class="small text-muted mt-2 mb-0">More project URLs and case studies can be added on request.</p>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education" class="section" aria-labelledby="education-heading">
-    <div class="container">
-      <h2 class="section-title" id="education-heading">
-        <i class="bi bi-mortarboard section-title-icon" aria-hidden="true"></i>
-        Education
-      </h2>
-      <div class="row g-3">
-        <div class="col-12 col-md-6">
-          <div class="edu-card h-100 p-3">
-            <h3 class="h6 mb-1">Double Diploma of Information Technology</h3>
-            <div class="small mb-1">Equinim College · 2024 – 2025</div>
-            <ul class="small mb-0">
-              <li>Diploma of Information Technology (Back End Web Development)</li>
-              <li>Diploma of Information Technology (Cyber Security)</li>
-              <li>Focus on databases, back-end systems, security fundamentals and cloud protocols.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="edu-card h-100 p-3">
-            <h3 class="h6 mb-1">Bachelor of Business Administration (Marketing)</h3>
-            <div class="small mb-0">Torrens University Australia · 2021 - 2026 (Currently Completing)</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section section-alt" aria-labelledby="contact-heading">
-    <div class="container">
-      <h2 class="section-title" id="contact-heading">
-        <i class="bi bi-chat-dots section-title-icon" aria-hidden="true"></i>
-        Contact
-      </h2>
-      <div class="row g-3">
-        <div class="col-md-6">
-          <div class="p-3 border rounded-3 h-100">
-            <p class="mb-2">
-              <i class="bi bi-envelope me-2" aria-hidden="true"></i>
-              <a href="mailto:thetimdaly@gmail.com" class="link-underline">thetimdaly@gmail.com</a>
+    <!-- ===================== PROFILE ===================== -->
+    <section id="profile" class="section" aria-labelledby="profile-heading">
+      <div class="container">
+        <h2 class="section-title" id="profile-heading">
+          <i class="bi bi-person-circle section-title-icon" aria-hidden="true"></i> Profile
+        </h2>
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <p>
+              Most trainers deliver content someone else made. I design and build interactive learning resources,
+              instructional slideshows and web-based tools, then teach from them. At Equinim College I deliver back-end
+              web development, AI and machine learning, and blockchain units to diploma cohorts of 12–25 students,
+              working within the RTO Standards. Many of my students are international, or are managing work and family
+              alongside study.
             </p>
-            <p class="mb-2">
-              <i class="bi bi-phone me-2" aria-hidden="true"></i>
-              <a href="tel:+61414265050" class="link-underline">(+61) 0414 265 050</a>
+            <p>
+              Before that I spent several years in WA and Victorian government roles. At the Department of Transport
+              I administered the ELMO learning management system department-wide and cut the online training update
+              cycle by about 20%. At COVID-19 Quarantine Victoria I rolled out policy, infection control and
+              de-escalation training to more than 60 support officers. Earlier, I coached new cabin crew at Jetstar
+              and trained presenters at RTRfm community radio.
             </p>
             <p class="mb-0">
-              <i class="bi bi-linkedin me-2" aria-hidden="true"></i>
-              <a href="https://www.linkedin.com/in/thetimdaly" target="_blank" rel="noopener" class="link-underline">
-                linkedin.com/in/thetimdaly
-              </a>
+              I also run <span class="fw-semibold">The Daly Creative</span>, a small studio doing web development,
+              branding and practical AI automation for local businesses. The technical skills aren't a separate career.
+              They're what let me build better training.
             </p>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="p-3 border rounded-3 h-100">
-            <h3 class="h6 mb-1">Referees</h3>
-            <p class="small mb-0">Available on request.</p>
+          <div class="col-lg-4">
+            <div class="card info-card h-100">
+              <div class="card-body">
+                <h3 class="h6 mb-3"><i class="bi bi-bullseye me-1" aria-hidden="true"></i> Roles I'm looking for</h3>
+                <ul class="small mb-0 ps-3">
+                  <li>Learning &amp; Development Officer / Coordinator</li>
+                  <li>Trainer and Assessor</li>
+                  <li>Training Officer / Coordinator</li>
+                  <li>Learning Systems / LMS Administrator</li>
+                  <li>Workforce Development / Capability Officer</li>
+                  <li>Learning Facilitator</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="py-4 footer">
-    <div class="container small text-center">
-      © <span id="year"></span> Tim Daly
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="section section-alt" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 class="section-title" id="skills-heading">
+          <i class="bi bi-lightning-charge section-title-icon" aria-hidden="true"></i> Core skills
+        </h2>
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-3">
+            <div class="card skill-card h-100">
+              <div class="card-body">
+                <div class="skill-icon skill-icon-teal"><i class="bi bi-people" aria-hidden="true"></i></div>
+                <h3 class="h6">Training &amp; facilitation</h3>
+                <ul class="small mb-0">
+                  <li>Adult classroom delivery to accredited qualifications</li>
+                  <li>Group facilitation with diverse learners</li>
+                  <li>Coaching, mentoring and peer support</li>
+                  <li>Calm delivery in high-pressure settings</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card skill-card h-100">
+              <div class="card-body">
+                <div class="skill-icon skill-icon-blue"><i class="bi bi-vector-pen" aria-hidden="true"></i></div>
+                <h3 class="h6">Learning design &amp; resources</h3>
+                <ul class="small mb-0">
+                  <li>HTML-based instructional slideshows</li>
+                  <li>Interactive Three.js learning tools</li>
+                  <li>Field guides, signage and wayfinding</li>
+                  <li>Adobe Illustrator &amp; Photoshop</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card skill-card h-100">
+              <div class="card-body">
+                <div class="skill-icon skill-icon-purple"><i class="bi bi-hdd-network" aria-hidden="true"></i></div>
+                <h3 class="h6">Learning systems</h3>
+                <ul class="small mb-0">
+                  <li>ELMO LMS administration</li>
+                  <li>Oracle DayForce HCM</li>
+                  <li>Microsoft 365 &amp; Azure Active Directory</li>
+                  <li>WebEx, Citrix, intranet publishing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card skill-card h-100">
+              <div class="card-body">
+                <div class="skill-icon skill-icon-orange"><i class="bi bi-code-slash" aria-hidden="true"></i></div>
+                <h3 class="h6">Web &amp; AI</h3>
+                <ul class="small mb-0">
+                  <li>React, Tailwind CSS, Bootstrap, JavaScript</li>
+                  <li>Node.js, Express, REST APIs, MongoDB</li>
+                  <li>Claude API, prompt engineering, automation</li>
+                  <li>Git/GitHub, Vercel, Netlify, Supabase</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-strip mt-4" aria-label="Technology stack">
+          <span class="fw-semibold small me-1"><i class="bi bi-terminal me-1" aria-hidden="true"></i>Stack:</span>
+          <span class="tech-pill"><i class="bi bi-filetype-html" aria-hidden="true"></i>HTML5</span>
+          <span class="tech-pill"><i class="bi bi-filetype-css" aria-hidden="true"></i>CSS3</span>
+          <span class="tech-pill"><i class="bi bi-filetype-js" aria-hidden="true"></i>JavaScript</span>
+          <span class="tech-pill"><i class="bi bi-filetype-jsx" aria-hidden="true"></i>React</span>
+          <span class="tech-pill"><i class="bi bi-bootstrap" aria-hidden="true"></i>Bootstrap</span>
+          <span class="tech-pill"><i class="bi bi-box" aria-hidden="true"></i>Three.js</span>
+          <span class="tech-pill"><i class="bi bi-server" aria-hidden="true"></i>Node.js</span>
+          <span class="tech-pill"><i class="bi bi-database" aria-hidden="true"></i>MongoDB</span>
+          <span class="tech-pill"><i class="bi bi-stars" aria-hidden="true"></i>Claude API</span>
+          <span class="tech-pill"><i class="bi bi-github" aria-hidden="true"></i>GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience" class="section" aria-labelledby="experience-heading">
+      <div class="container">
+        <h2 class="section-title" id="experience-heading">
+          <i class="bi bi-briefcase section-title-icon" aria-hidden="true"></i> Experience
+        </h2>
+
+        <ol class="list-unstyled timeline mb-0">
+
+          <li class="job">
+            <img class="job-logo" src="images/logos/equinim.svg" alt="" aria-hidden="true" width="48" height="48">
+            <div class="job-body">
+              <div class="job-head">
+                <h3 class="h5 mb-0">Trainer &amp; Industry Specialist</h3>
+                <span class="badge text-bg-success-subtle job-badge">Current</span>
+              </div>
+              <p class="job-org">Equinim College of Technology (RTO 45758) · Perth, WA</p>
+              <p class="job-meta">October 2025 – Present · Part-time / sessional</p>
+              <ul>
+                <li>Deliver classroom training in back-end web development, AI and machine learning, and blockchain to
+                  diploma cohorts of 12–25 students, working to accredited qualifications within the RTO Standards.</li>
+                <li>Teach culturally and educationally diverse cohorts, many of them managing work or family alongside
+                  study.</li>
+                <li>Design and build student-facing resources: an interactive Three.js campus wayfinding map, rendered
+                  floor plans, room signage and HTML-based instructional slideshows.</li>
+                <li>Produced a custom field guide for students attending the Black Swan Summit 2026 at UWA.</li>
+                <li>Mentor students toward industry-ready practice, including writing observational support letters.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job">
+            <img class="job-logo" src="images/logos/daly-creative.svg" alt="" aria-hidden="true" width="48"
+              height="48">
+            <div class="job-body">
+              <div class="job-head">
+                <h3 class="h5 mb-0">Founder &amp; Creative Director</h3>
+                <span class="badge text-bg-success-subtle job-badge">Current</span>
+              </div>
+              <p class="job-org">The Daly Creative · Perth, WA</p>
+              <p class="job-meta">February 2025 – Present</p>
+              <ul>
+                <li>Brand identity, web development (React / Tailwind), print design and AI automation for clients in
+                  hospitality, health, framing and tech.</li>
+                <li>Build reusable AI workflow automations and Claude API integrations.</li>
+                <li>Run the full client lifecycle on my own: scoping, design, build, deployment and support.</li>
+                <li>Advise small businesses on practical, low-risk AI adoption.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job">
+            <img class="job-logo" src="images/logos/transport-wa.svg" alt="" aria-hidden="true" width="48"
+              height="48">
+            <div class="job-body">
+              <h3 class="h5 mb-0">Technology Administrator</h3>
+              <p class="job-org">Department of Transport, Western Australia · Perth, WA</p>
+              <p class="job-meta">June 2024 – January 2025 · Full-time</p>
+              <ul>
+                <li>Administered the ELMO learning management system department-wide, covering content updates, user
+                  administration and compliance training delivery.</li>
+                <li>Redesigned the online training update process, cutting cycle time by about 20%.</li>
+                <li>Administered Oracle DayForce payroll and People &amp; Culture systems, and built in-house Employee
+                  Self Service updates that reduced reliance on costly external Oracle support.</li>
+                <li>Automated staff notifications for banking detail changes, reducing inbound HR queries.</li>
+                <li>Second-in-charge in a team of six, giving technical guidance and liaising with Executive Directors,
+                  management and Licensing Services.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job">
+            <img class="job-logo" src="images/logos/supreme-court-wa.svg" alt="" aria-hidden="true" width="48"
+              height="48">
+            <div class="job-body">
+              <h3 class="h5 mb-0">Court Technology &amp; Resource Officer</h3>
+              <p class="job-org">Supreme Court of Western Australia (Department of Justice) · Perth, WA</p>
+              <p class="job-meta">July 2023 – May 2024</p>
+              <ul>
+                <li>Led the development and launch of the Supreme Court staff intranet.</li>
+                <li>Moved courtroom booking from a manual process to an integrated digital calendar, and supported staff
+                  through the change.</li>
+                <li>Engaged stakeholders from Executive Manager through to the Chief Justice of WA.</li>
+                <li>Coordinated the response to significant AV and system incidents, keeping proceedings running.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job">
+            <img class="job-logo" src="images/logos/district-court-wa.svg" alt="" aria-hidden="true" width="48"
+              height="48">
+            <div class="job-body">
+              <h3 class="h5 mb-0">Court Support Officer</h3>
+              <p class="job-org">District Court of Western Australia (Department of Justice) · Perth, WA</p>
+              <p class="job-meta">November 2022 – July 2023 · Full-time</p>
+              <ul>
+                <li>Managed civil subpoena processes end to end under strict security and confidentiality.</li>
+                <li>Primary contact for court users, many of them distressed, and initiated process improvements that
+                  made the registry more efficient.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job">
+            <img class="job-logo" src="images/logos/aec.svg" alt="" aria-hidden="true" width="48" height="48">
+            <div class="job-body">
+              <h3 class="h5 mb-0">Supervising Electoral Officer</h3>
+              <p class="job-org">Australian Electoral Commission · Melbourne, VIC</p>
+              <p class="job-meta">2022 Federal Election</p>
+              <ul>
+                <li>Supervised polling operations at the Maribyrnong branch, then moved to the Airport West counting
+                  centre for the count.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job">
+            <img class="job-logo" src="images/logos/quarantine-vic.svg" alt="" aria-hidden="true" width="48"
+              height="48">
+            <div class="job-body">
+              <h3 class="h5 mb-0">Resident Support Officer / Team Leader</h3>
+              <p class="job-org">COVID-19 Quarantine Victoria (Department of Justice) · Melbourne, VIC</p>
+              <p class="job-meta">December 2020 – April 2022 · Full-time</p>
+              <ul>
+                <li>Facilitated training and the rollout of policy and procedure updates to more than 60 support officers,
+                  covering infection prevention and control, PPE, emergency response, de-escalation and team building.
+                </li>
+                <li>Led daily operations as Acting Team Leader and Operations Coordinator: planning, rostering, duty
+                  allocation and HR support.</li>
+                <li>Monitored resident welfare by radio and coordinated safe resolutions with site management for people
+                  in acute distress.</li>
+                <li>Consulted stakeholders through frequent and significant operational change.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job">
+            <img class="job-logo" src="images/logos/sensis.svg" alt="" aria-hidden="true" width="48" height="48">
+            <div class="job-body">
+              <h3 class="h5 mb-0">Digital Solutions Specialist</h3>
+              <p class="job-org">White Pages Australia (Sensis)</p>
+              <p class="job-meta">November 2018 – October 2020</p>
+              <ul>
+                <li>Facilitated remote training and upskilling sessions across both Sensis brands.</li>
+                <li>Devised and published metrics for customer service delivery, and analysed call centre trends to find
+                  improvements.</li>
+                <li>High Achievers Award and Top Overall Sales &amp; Retention Performer.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job">
+            <img class="job-logo" src="images/logos/medibank.svg" alt="" aria-hidden="true" width="48" height="48">
+            <div class="job-body">
+              <h3 class="h5 mb-0">Customer Retention Specialist</h3>
+              <p class="job-org">Medibank Private · Docklands, VIC</p>
+              <p class="job-meta">February 2018 – November 2018</p>
+              <ul>
+                <li>Developed processes and workflows to help sales staff work more efficiently, within strict legal
+                  compliance and QA requirements.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job">
+            <img class="job-logo" src="images/logos/jetstar.svg" alt="" aria-hidden="true" width="48" height="48">
+            <div class="job-body">
+              <h3 class="h5 mb-0">Cabin Crew · Coaching &amp; Training Assistant · Peer Support Officer</h3>
+              <p class="job-org">Jetstar Airways · Melbourne, VIC</p>
+              <p class="job-meta">March 2013 – February 2018</p>
+              <ul>
+                <li>Coached and developed new frontline cabin crew as a Training Assistant, and gave structured peer
+                  support to colleagues as a formal Peer Support Officer.</li>
+                <li>Delivered service and safety on A320/A321 domestic routes in a highly regulated environment.</li>
+                <li>98% average across ground school and EP/IP training. National Employee of the Month twice.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job">
+            <img class="job-logo" src="images/logos/rtrfm.svg" alt="" aria-hidden="true" width="48" height="48">
+            <div class="job-body">
+              <h3 class="h5 mb-0">Presenter &amp; Chief Production Director</h3>
+              <p class="job-org">RTRfm 92.1 Community Radio · Mount Lawley, WA</p>
+              <p class="job-meta">February 2008 – November 2014 · Community role, alongside paid work</p>
+              <ul>
+                <li>Scouted, recruited and trained new presenters and collective members to broadcast standard.</li>
+                <li>Presented and ran the live panel on a multi-award-winning talk programme for five-plus years.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job">
+            <img class="job-logo" src="images/logos/sgio.svg" alt="" aria-hidden="true" width="48" height="48">
+            <div class="job-body">
+              <h3 class="h5 mb-0">Sales &amp; Service Specialist</h3>
+              <p class="job-org">SGIO Insurance (IAG) · Subiaco, WA</p>
+              <p class="job-meta">2012 – 2013</p>
+              <ul>
+                <li>Ranked #1 consultant in WA for Q4 2012. Seconded as Acting Operations Administration Coordinator
+                  (Team Leader), coaching sales performance and buddying new staff.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job">
+            <img class="job-logo" src="images/logos/earlier.svg" alt="" aria-hidden="true" width="48" height="48">
+            <div class="job-body">
+              <h3 class="h5 mb-0">Earlier career</h3>
+              <p class="job-meta">2003 – 2012 · Perth, WA</p>
+              <ul>
+                <li><strong>Kleenheat Gas (Wesfarmers)</strong>: Customer Service Officer, Acting Team Leader, helped
+                  train new staff.</li>
+                <li><strong>Westnet / iiNet</strong>: Senior Customer Service Consultant, buddied new staff and helped
+                  the training team with inductions.</li>
+                <li><strong>Starland Video</strong>: Assistant Store Manager, five years from high school, left as 2IC.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section section-alt" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 class="section-title" id="projects-heading">
+          <i class="bi bi-window-stack section-title-icon" aria-hidden="true"></i> Selected projects
+        </h2>
+
+        <h3 class="h6 text-uppercase subhead mb-3">Learning resources</h3>
+        <div class="row g-3 mb-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="card project-card resource-card h-100">
+              <div class="card-body">
+                <div class="skill-icon skill-icon-teal"><i class="bi bi-map" aria-hidden="true"></i></div>
+                <h4 class="h6">3D campus wayfinding map</h4>
+                <p class="small mb-0">Interactive Three.js map helping new Equinim students find their way around
+                  campus, backed by rendered floor plans and room signage.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card project-card resource-card h-100">
+              <div class="card-body">
+                <div class="skill-icon skill-icon-blue"><i class="bi bi-file-slides" aria-hidden="true"></i></div>
+                <h4 class="h6">HTML instructional slideshows</h4>
+                <p class="small mb-0">Browser-based teaching decks I build and deliver from for diploma units in web
+                  development, AI/ML and blockchain.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card project-card resource-card h-100">
+              <div class="card-body">
+                <div class="skill-icon skill-icon-purple"><i class="bi bi-journal-bookmark" aria-hidden="true"></i>
+                </div>
+                <h4 class="h6">Black Swan Summit field guide</h4>
+                <p class="small mb-0">A custom field guide produced for Equinim students attending the Black Swan
+                  Summit 2026 at UWA.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card project-card resource-card h-100">
+              <div class="card-body">
+                <div class="skill-icon skill-icon-orange"><i class="bi bi-arrow-repeat" aria-hidden="true"></i></div>
+                <h4 class="h6">ELMO training update process</h4>
+                <p class="small mb-0">Redesigned how online training content is updated at the Department of
+                  Transport, cutting cycle time by about 20%.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="h6 text-uppercase subhead mb-3">Client work · The Daly Creative</h3>
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-3">
+            <article class="card project-card h-100">
+              <img src="images/drumplings.png" class="card-img-top project-img" loading="lazy"
+                alt="Drumplings brand artwork: bold black DRUMPS lettering over a golden dumpling on an orange background">
+              <div class="card-body">
+                <h4 class="h6 mb-1">Drumplings</h4>
+                <p class="small text-body-secondary mb-2">Melbourne fusion restaurant</p>
+                <p class="small mb-2">Website redesign focused on user flow, mobile responsiveness, SEO and a clean,
+                  modern hospitality brand.</p>
+                <div class="tag-row"><span class="tag-pill">Web design</span><span class="tag-pill">SEO</span></div>
+              </div>
+              <div class="card-footer bg-transparent border-0 pt-0">
+                <a href="https://www.drumplings.com.au" target="_blank" rel="noopener" class="small link-accent">
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> drumplings.com.au</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="card project-card h-100">
+              <img src="images/preservation-framers.png" class="card-img-top project-img" loading="lazy"
+                alt="Preservation Framers website homepage">
+              <div class="card-body">
+                <h4 class="h6 mb-1">Preservation Framers</h4>
+                <p class="small text-body-secondary mb-2">Boutique art framing, Perth</p>
+                <p class="small mb-2">Brand refresh and website build: information architecture, typography, colour
+                  palette and service page structure.</p>
+                <div class="tag-row"><span class="tag-pill">Branding</span><span class="tag-pill">Web design</span>
+                </div>
+              </div>
+              <div class="card-footer bg-transparent border-0 pt-0">
+                <a href="https://www.preservationframers.com.au" target="_blank" rel="noopener"
+                  class="small link-accent"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                  preservationframers.com.au</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="card project-card h-100">
+              <img src="images/DORA-logo-portrait.jpg" class="card-img-top project-img" loading="lazy"
+                alt="Dora Health &amp; Wellbeing logo">
+              <div class="card-body">
+                <h4 class="h6 mb-1">Dora Health &amp; Wellbeing</h4>
+                <p class="small text-body-secondary mb-2">In-home care provider</p>
+                <p class="small mb-2">Brand identity, colour system, web build and client onboarding pathways for a
+                  care and wellbeing organisation.</p>
+                <div class="tag-row"><span class="tag-pill">Care services</span><span class="tag-pill">Onboarding</span>
+                </div>
+              </div>
+              <div class="card-footer bg-transparent border-0 pt-0">
+                <a href="https://www.dorahealth.com.au" target="_blank" rel="noopener" class="small link-accent">
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> dorahealth.com.au</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="card project-card h-100">
+              <img src="images/thedalycreative.jpeg" class="card-img-top project-img" loading="lazy"
+                alt="The Daly Creative website homepage">
+              <div class="card-body">
+                <h4 class="h6 mb-1">The Daly Creative</h4>
+                <p class="small text-body-secondary mb-2">My studio &amp; portfolio</p>
+                <p class="small mb-2">Home for my web, branding and AI automation work, built and maintained myself.</p>
+                <div class="tag-row"><span class="tag-pill">Portfolio</span><span class="tag-pill">AI automation</span>
+                </div>
+              </div>
+              <div class="card-footer bg-transparent border-0 pt-0">
+                <a href="https://thedalycreative.com" target="_blank" rel="noopener" class="small link-accent">
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> thedalycreative.com</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== QUALIFICATIONS ===================== -->
+    <section id="education" class="section" aria-labelledby="education-heading">
+      <div class="container">
+        <h2 class="section-title" id="education-heading">
+          <i class="bi bi-mortarboard section-title-icon" aria-hidden="true"></i> Qualifications &amp; recognition
+        </h2>
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <ul class="list-group list-group-flush qual-list">
+              <li class="list-group-item qual-featured">
+                <div class="d-flex justify-content-between flex-wrap gap-2">
+                  <strong>TAE40122 Certificate IV in Training and Assessment</strong>
+                  <span class="badge text-bg-success">Completed 2026</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between flex-wrap gap-2">
+                  <span><strong>Diploma of Information Technology (Back-End Web Development)</strong><br>
+                    <span class="small text-body-secondary">Equinim College</span></span>
+                  <span class="small text-body-secondary">Completed</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between flex-wrap gap-2">
+                  <span><strong>Diploma of Information Technology (Cyber Security)</strong><br>
+                    <span class="small text-body-secondary">Equinim College</span></span>
+                  <span class="small text-body-secondary">Completed</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between flex-wrap gap-2">
+                  <span><strong>Bachelor of Business Administration (Marketing)</strong><br>
+                    <span class="small text-body-secondary">Torrens University Australia</span></span>
+                  <span class="small text-body-secondary">In progress</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between flex-wrap gap-2">
+                  <span><strong>Certificate IV in Allied Health Assistance</strong></span>
+                  <span class="small text-body-secondary">2013</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between flex-wrap gap-2">
+                  <span><strong>FNS30111 Certificate III in Financial Services</strong></span>
+                  <span class="small text-body-secondary">2012–13</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between flex-wrap gap-2">
+                  <span><strong>Broadcast Training Course</strong> · RTRfm 92.1</span>
+                  <span class="small text-body-secondary">2010</span>
+                </div>
+              </li>
+            </ul>
+            <p class="small text-body-secondary mt-3 mb-0">
+              <i class="bi bi-shield-check me-1" aria-hidden="true"></i>
+              Current National Police Check · Working With Children Check (NSW) · Responsible Service of Alcohol (VIC)
+              · Infection control, PPE, emergency response and de-escalation training
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div class="card info-card h-100">
+              <div class="card-body">
+                <h3 class="h6 mb-3"><i class="bi bi-trophy me-1" aria-hidden="true"></i> Awards</h3>
+                <ul class="small mb-0 ps-3 awards">
+                  <li>PrideFest GLAMMY Award 2012, Best Community Group (RTRfm)</li>
+                  <li>Pride WA GLAMMY Award 2010, Best Media (RTRfm)</li>
+                  <li>WA AIDS Council World AIDS Day Award 2010, Best Media (RTRfm)</li>
+                  <li>Jetstar National Employee of the Month (twice)</li>
+                  <li>Sensis High Achievers Award; Top Overall Sales &amp; Retention Performer</li>
+                  <li>SGIO #1 consultant in WA (Q4 2012); IAG Top Performer</li>
+                  <li>Elected School Captain 2007, South Fremantle SHS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section section-alt" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 class="section-title" id="contact-heading">
+          <i class="bi bi-chat-dots section-title-icon" aria-hidden="true"></i> Contact
+        </h2>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <a class="card contact-card h-100 text-decoration-none" href="mailto:thetimdaly@gmail.com">
+              <div class="card-body"><i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                <span class="small text-body-secondary d-block">Email</span>thetimdaly@gmail.com</div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="card contact-card h-100 text-decoration-none" href="tel:+61414265050">
+              <div class="card-body"><i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                <span class="small text-body-secondary d-block">Phone</span>0414 265 050</div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="card contact-card h-100 text-decoration-none" href="https://www.linkedin.com/in/thetimdaly"
+              target="_blank" rel="noopener">
+              <div class="card-body"><i class="bi bi-linkedin" aria-hidden="true"></i>
+                <span class="small text-body-secondary d-block">LinkedIn</span>linkedin.com/in/thetimdaly</div>
+            </a>
+          </div>
+        </div>
+        <p class="small text-body-secondary mt-3 mb-0">Referees available on request.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer py-4">
+    <div class="container small d-flex flex-wrap justify-content-between gap-2">
+      <span>© <span id="year">2026</span> Timothy Daly · Perth, Western Australia</span>
+      <span class="no-print"><a href="#top" class="link-light">Back to top <i class="bi bi-arrow-up"
+            aria-hidden="true"></i></a></span>
     </div>
   </footer>
 
-  <!-- Bootstrap JS + Inline Script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      // Footer year
-      var yearEl = document.getElementById("year");
-      if (yearEl) {
-        yearEl.textContent = new Date().getFullYear();
-      }
+      document.getElementById("year").textContent = new Date().getFullYear();
 
-      // Print buttons
       document.querySelectorAll("[data-action='print']").forEach(function (btn) {
-        btn.addEventListener("click", function () {
-          window.print();
-        });
+        btn.addEventListener("click", function () { window.print(); });
       });
 
-      // Smooth scroll for internal nav links
-      document.querySelectorAll("a[href^='#']").forEach(function (link) {
-        link.addEventListener("click", function (e) {
-          var targetId = this.getAttribute("href");
-          if (!targetId || targetId === "#") return;
-          var target = document.querySelector(targetId);
-          if (target) {
-            e.preventDefault();
-            window.scrollTo({
-              top: target.offsetTop - 80,
-              behavior: "smooth"
-            });
-          }
+      // Collapse the mobile menu after a nav link is tapped
+      var navEl = document.getElementById("nav");
+      document.querySelectorAll("#nav .nav-link").forEach(function (link) {
+        link.addEventListener("click", function () {
+          if (navEl.classList.contains("show")) bootstrap.Collapse.getOrCreateInstance(navEl).hide();
         });
       });
     });
